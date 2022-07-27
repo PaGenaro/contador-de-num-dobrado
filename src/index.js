@@ -1,15 +1,13 @@
-import React, {Component} from 'react';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
-export default class Msg extends Component{
+import App from "./App";
 
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
 
-msgArrowFunction = () => {
-
-}
-
-render() {
-return(
-<h1>Bem vindo!</h1>
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
 );
-}
-}
